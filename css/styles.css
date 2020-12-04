@@ -1,0 +1,130 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*~~~~~~~~~~~~~Header Section*/
+
+header{
+    background-color: #F2F2F2;
+    padding: 20px;
+}
+
+h1{
+    color: #20A8B4;
+    margin-bottom: 5px;
+}
+
+nav{
+    font-size: 0.9rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 5px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color:#FF5C0F;
+}
+
+/*~~~~~~~~~~~~~Main Section*/
+
+main{
+    padding: 100px 20px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    padding: 15px 0;
+}
+
+img{
+    display: none;
+}
+
+/*~~~~~~~~~~~~~Buttons & Accents*/
+
+button{
+    background-color: #20A8B4;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FF5C0F;
+}
+
+.accent-color{
+    color: #FF5C0F;
+}
+
+
+/* ~~~~~~~~ Desktop Styling */
+
+@media only screen and (min-width: 768px){
+
+    header{
+        max-width: 100%;
+    }
+
+   .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container ul {
+        display: inline-block;
+    }
+    
+    .container li{
+        display: inline;
+        padding: 0 5px;
+    }
+
+   button{
+        width: auto;
+        margin-top: 0;
+    }
+    
+    main{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-container{
+        width: 55%;
+    }
+
+    .img-container{
+        width: 45%;
+    }
+
+    img {
+        display: inline;
+        max-height: 300px;
+        margin: 0 auto;
+    }
+}
